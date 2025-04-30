@@ -1,0 +1,84 @@
+/* Reset y bases */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+/* Estilos personalizados para Swiper */
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #ffffff80 !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  background-color: #FF43A4 !important;
+  box-shadow: 0 0 5px rgba(255, 67, 164, 0.8) !important;
+}
+
+.swiper-slide {
+  padding: 10px;
+}
+
+/* Animaciones adicionales */
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 67, 164, 0.7);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 67, 164, 0.9), 0 0 25px rgba(255, 67, 164, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 67, 164, 0.7);
+  }
+}
+
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para personalizar barras de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF43A4;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E30B86;
+}
+
+/* Estilos para la selección de texto */
+::selection {
+  background-color: #FF43A4;
+  color: #000000;
+}
